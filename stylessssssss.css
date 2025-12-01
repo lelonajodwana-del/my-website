@@ -39,6 +39,7 @@ h1, h2, h3{
    font-weight: 600;
 }
 .menu-icon{
+ padding: 10px;
    display: none;
    cursor: pointer;
   flex-direction: column;
@@ -185,4 +186,14 @@ h1, h2, h3{
 #Back to Top:hover{
    transform: scale(1.1);
 }
-
+/* Mobile tweaks */
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    right: 20px; /* Move the hamburger 20px from the right */
+    position: absolute; /* Make sure it's positioned relative to navbar */
+  }
+  
+  .navbar {
+    padding: 15px 20px; /* optional: adjust navbar padding */
+  }
+ }
